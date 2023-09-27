@@ -39,4 +39,5 @@ func main() {
         return
     }
     fmt.Println("Basic information was written successfully")
+    fmt.Println("\rPress Enter to exit...")
 }
