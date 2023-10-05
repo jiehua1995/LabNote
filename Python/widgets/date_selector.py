@@ -5,7 +5,7 @@ import datetime
 def get_date():
     date_format = "%Y-%m-%d"
     date_system = datetime.datetime.now().strftime(date_format)
-    print("Guten Tag! Today is "+date_system+"\n==========================")
+    print("Hello! Today is "+date_system+"\n==========================")
     while True:
         user_input = input("Press Enter to use the current system date, or enter a date (format: YYYY-MM-DD): ")
         if not user_input:  # User presses Enter
