@@ -39,6 +39,9 @@
       background-color: #45a049;
     }
   </style>
+
+  <!-- tinyMCE <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script> -->
+
 </head>
 <body>
   <h1>Markdown Generator</h1>
@@ -71,9 +74,36 @@
   <div class="input-group">
     <label for="markdownContent">Markdown Content</label>
     <textarea id="markdownContent"></textarea>
+
+<!-- tinymce -->
+    <!-- <textarea id="editor"></textarea>
+    <script>
+      tinymce.init({
+        selector: '#editor',
+        // Add more TinyMCE options as needed
+        plugins: 'your-markdown-plugin', // Replace with actual Markdown plugin
+        // Configure other options for the Markdown plugin
+      });
+    </script> -->
+
+
   </div>
+  
+
+
 
   <button id="saveButton">Save as Markdown</button>
+
+
+
+  <script>
+    // Set the default date
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const today = new Date().toISOString().split('T')[0];
+      document.getElementById('dateInput').value = today;
+    });
+  </script>
+  
 
   <script>
     const { ipcRenderer } = require('electron');

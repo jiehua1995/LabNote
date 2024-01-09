@@ -6,6 +6,7 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    icon: "favicon.ico", // Update the path
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
