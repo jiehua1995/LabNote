@@ -1,5 +1,5 @@
 {
-  "name": "electron",
+  "name": "Markdown_Generator",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
@@ -9,7 +9,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "LGPL-3.0-or-later",
   "dependencies": {
     "electron": "^28.1.2"
   }

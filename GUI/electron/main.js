@@ -4,7 +4,7 @@ const fs = require('fs');
 function createWindow() {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
+    width: 600,
     height: 600,
     icon: "favicon.ico", // Update the path
     webPreferences: {
